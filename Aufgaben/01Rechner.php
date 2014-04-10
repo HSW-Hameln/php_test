@@ -39,6 +39,7 @@ class Rechner {
     }
     public function div(){
         //a/b
+        return $this->a / $this->b;
     }
     public function div2(){
         //a/b Ganzzahldivision (19/4 = 4)
@@ -60,6 +61,7 @@ class Rechner {
     }
     public function xoder(){
         //a binär xoder verknüpft mit b.
+        return $this->a ^ $this->b;
     }
 
 } 
