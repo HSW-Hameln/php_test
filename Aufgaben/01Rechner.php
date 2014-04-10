@@ -43,6 +43,8 @@ class Rechner {
     }
     public function mod(){
         //a modulo b
+        $ergebnis = getA()%getB();
+        return $ergebnis;
     }
     public function sqr(){
         //a²
