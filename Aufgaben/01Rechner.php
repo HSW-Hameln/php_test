@@ -42,6 +42,10 @@ class Rechner {
     }
     public function div2(){
         //a/b Ganzzahldivision (19/4 = 4)
+
+            $erg=$this->a/$this->b;
+            round($erg);
+            return $erg;
     }
     public function mod(){
         //a modulo b
