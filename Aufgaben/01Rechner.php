@@ -57,6 +57,8 @@ class Rechner {
     }
     public function oder(){
         //a binär oder verknüpft mit b.
+        $c = $this->a | $this->b;
+        return $c;
     }
     public function xoder(){
         //a binär xoder verknüpft mit b.
