@@ -38,6 +38,11 @@ class String {
     }
     public function sort($asc){
         //sortiere die einträge im Array (asc = 1 aufsteigend, asc = 0 absteigend)
-
+        if($asc == 0) {
+            arsort($this->strings);
+        } else if($asc == 1) {
+            asort($this->strings);
+        }
+        return $this->strings;
     }
 }
