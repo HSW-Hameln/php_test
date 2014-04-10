@@ -25,8 +25,16 @@ class String {
 
     }
     public function find($f){
-        //Gibt ein Array zuruck das nur noch strings enthält die den String $f enthalten.
-
+        $results = [];
+        foreach($this->getStrings() as $item)
+        {
+            if(strpos($item, $f))
+            {
+                $results[] = $item;
+            }
+        }
+        return $results;
+        //asdasdasd
     }
     public function replace($old, $new){
         //Ersetze jedes $old in jedem String in $strings.
