@@ -30,6 +30,12 @@ class Kontrollfluss {
         //Wenn a größer als b gib 1 zurück
         //Wenn a = b gib 0 zurück
         //sonst -1
+        if ($this->a > $this->b)
+            { return 1; }
+        elseif ($this->a == $this->b)
+            { return 0; }
+        else
+            { return -1; }
     }
 
     public function liste(){
