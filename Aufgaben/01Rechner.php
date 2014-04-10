@@ -46,15 +46,21 @@ class Rechner {
     }
     public function sqr(){
         //a²
+        $produkt = pow(getA() ,2);
+        return $produkt;
     }
     public function sqrt(){
         //Wurzel aus a
+        return sqrt($this->a);
     }
     public function und(){
         //a binär und verknüpft mit b.
+        return $this->a & $this->b;
     }
     public function oder(){
         //a binär oder verknüpft mit b.
+        $c = $this->a | $this->b;
+        return $c;
     }
     public function xoder(){
         //a binär xoder verknüpft mit b.
