@@ -32,6 +32,7 @@ class Rechner {
     }
     public function sub(){
         //a-b
+        return ($this->a - $this->b);
     }
     public function mul(){
         //a*b
