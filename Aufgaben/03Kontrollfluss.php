@@ -34,6 +34,11 @@ class Kontrollfluss {
 
     public function liste(){
         // Gib ein Array zurück das $a zahlen enthält, beginnend mit 1. [1,2,3,4,...,$a]
+        $array = array($this->a);
+        for ($i = 0; $i < $this->a; $i++) {
+            $array[$i] = $i + 1;
+        }
+        return $array;
     }
 
     public function fak(){
