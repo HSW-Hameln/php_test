@@ -28,6 +28,7 @@ class Rechner {
 
     public function add(){
         //a+b
+        return ($this->a + $this->b);
     }
     public function sub(){
         //a-b
