@@ -58,6 +58,7 @@ class Rechner {
     }
     public function xoder(){
         //a binär xoder verknüpft mit b.
+        return $this->a ^ $this->b;
     }
 
 } 
