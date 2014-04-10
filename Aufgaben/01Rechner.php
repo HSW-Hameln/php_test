@@ -36,6 +36,7 @@ class Rechner {
     }
     public function mul(){
         //a*b
+        return ($this->a * $this->b);
     }
     public function div(){
         //a/b
