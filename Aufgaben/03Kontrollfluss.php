@@ -30,10 +30,21 @@ class Kontrollfluss {
         //Wenn a größer als b gib 1 zurück
         //Wenn a = b gib 0 zurück
         //sonst -1
+        if ($this->a > $this->b)
+            { return 1; }
+        elseif ($this->a == $this->b)
+            { return 0; }
+        else
+            { return -1; }
     }
 
     public function liste(){
         // Gib ein Array zurück das $a zahlen enthält, beginnend mit 1. [1,2,3,4,...,$a]
+        $array = array($this->a);
+        for ($i = 0; $i < $this->a; $i++) {
+            $array[$i] = $i + 1;
+        }
+        return $array;
     }
 
     public function fak(){
