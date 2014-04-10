@@ -51,6 +51,7 @@ class Rechner {
     }
     public function sqrt(){
         //Wurzel aus a
+        return sqrt($this->a);
     }
     public function und(){
         //a binär und verknüpft mit b.
