@@ -46,6 +46,8 @@ class Rechner {
     }
     public function sqr(){
         //a²
+        $produkt = pow(getA() ,2);
+        return $produkt;
     }
     public function sqrt(){
         //Wurzel aus a
