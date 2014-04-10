@@ -47,8 +47,35 @@ class Kontrollfluss {
         return $array;
     }
 
-    public function fak(){
+/**
+     * Berechnet die Fakultät
+     * @return Fakultät von a, false falls a keine Zahl
+     */
+    public function fak()
+    {
+        if (!is_numeric($this->a))
+        {
+            return false;
+        }
+        return $this->fak_rek($this->a);
+    }
+    
+    /**
+     * rekursives Berechnen der Fakultät
+     * 
+     * @param $i Zahl zu der die Fakulktät berechnet werden soll
+     * @param string $erg Zwischenergebnis (wird automatisch benutzt)
+     * @return Fakultät von $i
+     */
+    private function fak_rek($i, $erg = NULL)
+    {
         // berechne rekursiv die fakultÃ¤t von $a
+        if ($i == 1)
+        {
+            return $erg == NULL ? 1 : $erg;
+        }
+        $erg = $erg == NULL ? $i-- : $erg * $i--;
+        return $this->fak_rek($i, $erg);
     }
 
 } 
