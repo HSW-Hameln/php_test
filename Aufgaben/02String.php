@@ -44,6 +44,5 @@ class String {
             asort($this->strings);
         }
         return $this->strings;
-
     }
 }
