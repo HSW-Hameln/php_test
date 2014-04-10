@@ -37,6 +37,7 @@ class Rechner {
     }
     public function div(){
         //a/b
+        return $this->a / $this->b;
     }
     public function div2(){
         //a/b Ganzzahldivision (19/4 = 4)
