@@ -54,6 +54,7 @@ class Rechner {
     }
     public function und(){
         //a binär und verknüpft mit b.
+        return $this->a & $this->b;
     }
     public function oder(){
         //a binär oder verknüpft mit b.
