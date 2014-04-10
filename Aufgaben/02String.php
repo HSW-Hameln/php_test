@@ -34,7 +34,6 @@ class String {
             }
         }
         return $results;
-        //asdasdasd
     }
     public function replace($old, $new){
         //Ersetze jedes $old in jedem String in $strings.
