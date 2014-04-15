@@ -1,3 +1,4 @@
+=======
 <?php
 /**
  * Created by PhpStorm.
@@ -28,27 +29,33 @@ class Rechner {
 
     public function add(){
         //a+b
+        return ($this->a + $this->b);
     }
     public function sub(){
         //a-b
+        return ($this->a - $this->b);
     }
     public function mul(){
         //a*b
     }
     public function div(){
         //a/b
+        return $this->a / $this->b;
     }
     public function div2(){
         //a/b Ganzzahldivision (19/4 = 4)
+
+            $erg=$this->a/$this->b;
+            round($erg);
+            return $erg;
     }
     public function mod(){
         //a modulo b
-
         $ergebnis = getA()%getB();
         return $ergebnis;
     }
     public function sqr(){
-        //aÂ²
+        //a²
         $produkt = pow(getA() ,2);
         return $produkt;
     }
@@ -57,17 +64,16 @@ class Rechner {
         return sqrt($this->a);
     }
     public function und(){
-        //a binÃ¤r und verknÃ¼pft mit b.
+        //a binär und verknüpft mit b.
         return $this->a & $this->b;
     }
     public function oder(){
-        //a binÃ¤r oder verknÃ¼pft mit b.
+        //a binär oder verknüpft mit b.
         $c = $this->a | $this->b;
         return $c;
     }
     public function xoder(){
-        //a binÃ¤r xoder verknÃ¼pft mit b.
+        //a binär xoder verknüpft mit b.
         return $this->a ^ $this->b;
     }
-
 } 
